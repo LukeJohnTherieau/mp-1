@@ -27,7 +27,7 @@ header{
 
 nav{
     background-color: chocolate;
-    width: 30%;
+    width: 20%;
 }
 
 nav ul{
@@ -39,7 +39,7 @@ nav li{
     width: 80%;
     background-color:orange;
     padding: 1%;
-    margin: 18% auto;
+    margin: 10% auto;
     text-align: center;
 }
 
@@ -51,10 +51,10 @@ nav a{
 main{
     padding: 1% 2%;
     /*at least 100vh*/
-    height: 150vh;
+    height: 180vh;
     background-color: wheat;
     text-align: center;
-    width: 70%;
+    width: 80%;
 }
 
 #this-one{
@@ -64,6 +64,10 @@ main{
     align-items: center;
     width: 100%;
     margin: 5% 0;
+}
+
+#row_two p{
+    text-align: left;
 }
 
 main p{
@@ -144,5 +148,11 @@ footer a{
 
     main{
         height: 100vh;
+    }
+
+    main p{
+        line-height: 100%;
+        font-size: calc(10px + 2vw);
+        padding: 2%;
     }
 }
