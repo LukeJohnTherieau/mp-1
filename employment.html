@@ -3,43 +3,49 @@
     <head>
         <meta charset="UTF-8">
         <meta name="description" content="Luke Therieau's Resume">
-        <link type="text/css" rel="stylesheet" href="index.css">
+        <link type="text/css" rel="stylesheet" href="src/css/index.css">
+        <link href="https://fonts.googleapis.com" rel="stylesheet">
         <title>Employment | Resume</title>
     </head>
-
     <body>
-
         <div id="page-wrapper">
-
-    <!--Header starts-->
+            <!--Header starts-->
             <header>
-
+                <img src="src/images/IMG_3390.png" alt="Luke Therieau" class = "profile-picture">
+                <div id = "header-title">
                     <h1>Luke Therieau</h1>
                     <p>Resume</p>
+                </div>
             </header>
-    <!--Header end-->
-
+            <!--Header end-->
         <div id="nav-main">
-
-    <!--Navigation Start-->
+        <!--Navigation Start-->
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="education.html">Education</a></li>
-                    <li><a href="employment.html">Employment</a></li>
+                    <li id="selected-page"><a href="employment.html">Employment</a></li>
                     <li><a href="projects.html">Projects</a></li>
                     <li><a href="awards.html">Awards</a></li>
                     <li><a href="skills.html">Skills</a></li>
                 </ul>
             </nav>
-    <!--Navigation End-->
-
-    <!--Manin Content start-->
+            <!--Navigation End-->
+            <!--Manin Content start-->
             <main id="main">
                 <!--One Column start-->
-                <h3>Employment</h3>
-                <div id="this-one">
-                    <h3>Ophthalmetrix BI</h3>
+                <h2>Employment</h2>
+                <section>
+                    <div class="company-header">
+                        <img src="src/images/OMBI-vertical-dark-final.svg" alt="Ophthalmetrix BI Logo">
+                        <h3>Ophthalmetrix BI</h3>
+                    </div>
+                    <hr>
+                    <div class="role-container">
+                        <div class="role-header">
+                            <h4>Full Stack Developer, Co-Founder</h4>
+                            <p>January 2025 - Present</p>
+                        </div>
                         <ul>
                             <li>Designed, developed, and maintained a full-stack web application, initially built with Django and then refactored to ASP.NET</li>
                             <li>Worked with SQL Server to design, query, and optimize the data storage and retrieval processes for client facing dashboards</li>
@@ -47,26 +53,51 @@
                             <li>Deployed and administered Azure Function Apps to enable event-driven workflows and system integrations</li>
                             <li>Developed ETL workloads that leveraged APIs from various financial and medical management systems (QuickBooks, Nextech, ModMed, etc.)</li>
                         </ul>
-                </div>
-                <div id="this-one">
-                    <h3>Rhode Island Housing</h3>
+                    </div>
+                </section>
+                <section>
+                    <div class="company-header">
+                        <img src="src/images/images.jpg" alt="Rhode Island Hosuing Logo">
+                        <h3>Rhode Island Housing</h3>
+                    </div>
+                    <hr>
+                    <div class = "role-container">
+                        <div class="role-header">
+                            <h4>Operations Support Specialist IT</h4>
+                            <p>July 2022 - Present</p>
+                        </div>
                         <ul>
-                            <li>Designed, developed, and maintained a full-stack web application, initially built with Django and then refactored to ASP.NET</li>
-                            <li>Worked with SQL Server to design, query, and optimize the data storage and retrieval processes for client facing dashboards</li>
-                            <li>Collaborated with data engineers, business analysts, and stakeholders to understand requirements and deliver quality solutions via Agile</li>
-                            <li>Deployed and administered Azure Function Apps to enable event-driven workflows and system integrations</li>
-                            <li>Developed ETL workloads that leveraged APIs from various financial and medical management systems (QuickBooks, Nextech, ModMed, etc.)</li>
+                            <li>Created workloads that leveraged various API's (FreshService, Azure DevOps, ShareFile, Smartsheet, SecretServer, GoTo).</li>
+                            <li>Developed various ETLs to clean and map data before ingestion by the data warehouse (SQL Server)</li>
+                            <li>Reduced the workload of the Sr. Operation Specialist by 40+ hours a month through Python-based automated reporting</li>
+                            <li>Saved the company tens of thousands of dollars by creating scripts that parsed fixed-width files, replacing the need for Monarch</li>
+                            <li>Utilized Selenium to create scripts that scraped data from various web-based applications</li>
+                            <li>Shadowed loan servicing staff to gain exposure to the department's business and reporting procedures</li>
+                            <li>Administered various government and external applications (Black Knight, FNMA, FHA, MERS, Tableau, Freddie Mac, REPAY, USDA)</li>
+                            <li>Prioritized long and short-term projects and worked independently to meet established deadlines</li>
                         </ul>
-                </div>
+                    </div>
+                    <hr>
+                    <div class = "role-container">
+                        <div class="role-header">
+                            <h4>IT Support Specialist</h4>
+                            <p>July 2021 - July 2022</p>
+                        </div>
+                        <ul>
+                            <li>Provided Tier 1 & 2 technical support for end-users</li>
+                            <li>Imaged and prepared all new laptops the organization received</li>
+                            <li>Trained new hires on the organization's application and security policies </li>
+                        </ul>
+                    </div>
+                </section>
             </main>
             <!--Main Content End-->
-
         </div>
         <!--Footer start-->
-            <footer>
-                <p>All Rights Reserved by Luke Therieau &#169;</p>
-                <div id="time-date"></div>
-            </footer>
+        <footer>
+            <p>All Rights Reserved by Luke Therieau <a href="#"> Credits</a> &#169;</p>
+            <div id="time-date"></div>
+        </footer>
         <!--Footer End-->
         </div>
     </body>
