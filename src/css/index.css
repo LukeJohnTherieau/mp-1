@@ -2,7 +2,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
 /*Centering the page*/
 #page-wrapper{
     width: 80vw;
@@ -19,161 +18,6 @@ header{
     flex-direction: row;
     align-items: center;
 }
-/*Header ends*/
-
-#header-title{
-    display: flex;
-    flex-direction: column;
-    align-items: left;
-    margin-left: 1%;
-}
-
-/*Two column container starts:*/
-
-#nav-main{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-}
-
-nav{
-    background-color: #E0DADA;
-    width: 20%;
-}
-
-nav ul{
-    list-style: none;
-    padding-left: 0;
-    padding: 10%;
-}
-
-nav li{
-    width: 90%;
-    background-color:#E0DADA;
-    text-align: left;
-    font-weight: 900;
-    padding-left: 3%;
-    border-radius: 5px;
-}
-
-nav li:hover{
-    width: 90%;
-    background-color:RGBA(165, 178, 194, 0.7);
-    text-align: left;
-    padding-left: 3%;
-}
-
-#selected-page{
-    background-color:RGBA(160, 209, 255, 0.7);
-}
-
-nav a{
-    text-decoration: none;
-    font-size: calc(2px + 1.3vw);
-    color: black;
-}
-nav a:visited {
-  color: black;
-  text-decoration: none;
-}
-
-main{
-    padding: 1% 2%;
-    /*at least 100vh*/
-    height: 210vh;
-    background-color: #F4F2EE;
-    text-align: center;
-    width: 80%;
-}
-
-section{
-    /* background-color: #C2660A; */
-    padding-bottom: 1%;
-}
-
-section li {
-    text-align: left;
-    list-style-type: circle;
-}
-
-#all-skills{
-    display: flex;
-    flex-direction: column;
-}
-.skill-row{
-    display: flex;
-    flex-direction: row;
-}
-
-.skill-category{
-    width: 50%;
-    align-items: center;
-    outline: 2px solid black; 
-    border-radius: 5px;
-    margin: 1%
-}
-
-.skill-category li{
-    justify-content: left;
-    text-align: left;
-    list-style-type: circle;
-}
-
-.role-container{
-    margin: 2% 0;
-}
-
-.role-container p{
-    line-height: 100%;
-    font-size: calc(12px + 1vw);
-    padding: 2%;
-    text-align: left;
-}
-
-.role-header{
-    display: flex;
-    align-items: left;
-    justify-content: left;
-    text-align: left;
-    font-size: calc(12px + 1.3vw);
-    /* background-color: red; */
-    flex-direction: column;
-}
-
-.role-header h4{
-    font-size: calc(2px + 1.5vw);
-    font-weight: 200;
-}
-.role-header p{
-    font-size: calc(2px + 1vw);
-    font-weight: 200;
-    margin: 0 2%;
-    padding: 3px;
-}
-
-.company-header{
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    font-size: calc(12px + 1.3vw);
-    /* background-color: red; */
-    flex-direction: row;
-}
-
-.company-header h3{
-    font-size: calc(12px + 2vw);
-    font-weight: bold;
-}
-
-.company-header img{
-    width: 50px;       
-    height: 50px;      
-    border-radius: 50%; 
-    object-fit: cover;
-    margin: 5px;
-}
-
-
 .profile-picture{
     width: 75px;       
     height: 75px;      
@@ -181,92 +25,209 @@ section li {
     object-fit: cover;
     margin: 5px;
 }
+/*Header ends*/
+#header-title{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-left: 1%;
+}
 
-#row_two p{
-    justify-content: left;
+#nav-main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+/*Navigation starts*/
+nav{
+    background-color: #E0DADA;
+    width: 20%;                      /*I decided to use the 20% nav and 80% main content*/
+}
+nav ul{
+    list-style: none;
+    padding: 10%;
+}
+nav li{
+    width: 90%;
+    text-align: left;
+    background-color:#E0DADA;
+    font-weight: 900;
+    padding-left: 3%;
+    border-radius: 5px;
+}
+nav li:hover{
+    background-color:RGBA(165, 178, 194, 0.7);
+}
+nav a{
+    text-decoration: none;
+    font-size: calc(2px + 1.3vw);
+    color: black;
+}
+nav a:visited {
+    color: black;
+    text-decoration: none;
+}
+
+#selected-page{
+    background-color:RGBA(160, 209, 255, 0.7);
+}
+/*Navigation ends*/
+/*Main starts*/
+main{
+    padding: 1% 2%;                                      /*Padding for main content */
+    min-height: 100vh;                                   /*Opted for min-height 100vh so that I can allow for diffrent screen sizes*/
+    background-color: #F4F2EE;
+    text-align: center;                                   /*Unless defined more specific, all items will be centered */
+    width: 80%;                                           /*I decided to use the 20% nav and 80% main content*/
+}
+main p{                              
+    font-size: calc(8px + 1vw);                              
+    padding: 2%;                                      
+    text-align: left;                                    /*Unless defined more specific, all paragraphs will be left aligned */
+}
+main h2{
+    text-align: center;                                /*This is used for all page titles*/
+    margin: 2% 0;
+    font-size: calc(30px + 2vw);
+    color: black;
+}
+main img{
+    max-width: 40%;                                 /*This is used for the home page only*/                     
+}
+/*Main ends*/
+/*skills starts*/
+.skill-row{                                                 /*This is used to create a 2 X 2 table for skills gropuped by category*/     
     display: flex;
     flex-direction: row;
 }
-
-main p{
-    line-height: 100%;
-    font-size: calc(12px + 2vw);
-    padding: 2%;
+.skill-category{                                                     
+    width: 50%;
+    outline: 2px solid black;                        /*Each category will have a thin border*/  
+    border-radius: 5px;                                /*Used to make the div have rounded edges*/  
+    margin: 1%;
+    padding: 1%;
 }
-
-main h2{
-    text-align: center;
+.skill-category li{                                 /*All list items (skills) will be left aligned and larger fonts compared to other lists*/  
+    text-align: left;
+    list-style-type: circle;
+    font-size: calc(10px + 0.75vw);
+}
+/*skills ends*/
+/*company starts*/
+.company-container{                         /*Used for all organizations represented*/
+    padding-bottom: 1%;
+}
+.company-header{
+    display: flex;
+    align-items: center;
+    font-size: calc(12px + 1.3vw);
+}
+.company-header h3{
+    font-size: calc(16px + 1vw);
+    font-weight: 700;           
+}
+.company-header img{
+    width: 50px;       
+    height: 50px;      
+    border-radius: 50%;                  /*Used to create a circular picture*/  
+    object-fit: cover;                /*covers the entire area of the container without distortion*/
+    margin: 5px;                       /*Seperate image from title*/
+}
+/*company ends*/
+/*role starts*/
+.role-header{                  /*Used for all roles/titles represented*/
+    text-align: left;
+}
+.role-header h4{
+    font-size: calc(10px + 1vw);
+    font-weight: 200;
+}
+.role-header span{
+    font-size: calc(8px + 0.5vw);
+    font-weight: 200;
+    padding: 0;
+    color: #616161;
+}
+.role-container ul{
+    padding: 1%;
+}
+.role-container li{
+    text-align: left;
+    list-style-type: circle;
+    font-size: calc(4px + 0.75vw);
+}
+.role-container{
     margin: 2% 0;
-    font-size: calc(12px + 2vw);
-    color: black;
 }
-
-main img{
-    max-width: 40%;
+.role-container p{
+    line-height: 100%;
+    font-size: calc(6px + 0.75vw);
+    padding: 2%;
+    text-align: left;
 }
-
-#calculator-container{
+/*role ends*/
+#projects-content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    width:50%;
-    background-color: gray;
+}
+/*Calculator start*/
+#calculator-container{                  /*Used to contain calculator project*/
+    display: flex;
+    flex-direction: column;                    /*Sub groups will first be stacked*/
+    width:50%;                               /*Will cover half the main page*/
+    background-color: gray;                /*Gray like a calculator*/
     padding: 2%;
-    border-radius: 10px;
+    border-radius: 10px;                 /*Give caluclator container rounded edges (like a caluclator would have)*/                
 }
 #calculator-container h3{
-    outline: 2px solid black; 
+    outline: 2px solid black;               /*Give the output area a border*/
     border-radius: 1px;
     width: 100%;
-    height: calc(12px + 1vw);
+    height: calc(12px + 1vw);                    /*Give font size and height the same size so that area doesn't change as much when values appear*/
     font-size: calc(12px + 1vw);
-    justify-content: center;
-    background-color: white;
-    
+    background-color: white;                
 }
-#calculator-button-group{
-    display: flex;
-    flex-direction: column;
+#calculator-button-group{                    /*Contain all buttons and make sure their width is 100% of calculator*/
     width: 100%;
 }
-.calculator-button-row{
+.calculator-button-row{                         /*Have buttons in this group be side by side*/
     display: flex;
     flex-direction: row;
-    width: 100%;
 }
-#calculator-button-group button{
+#calculator-button-group button{             /*Ensure buttons fill entire area of parent*/
     width:100%
 }
-#calculator-input-group{
+#calculator-input-group{               /*Have input/labels in this group side by side*/
     display: flex;
     flex-direction: row;
-    width: 100%;
+
 }
-.calculator-input{
+.calculator-input{                         /*Have input/labels in this group side by side*/
     color: white;
     display: flex;
     flex-direction: column;
     width: 50%;
 }
-
-
+.calculator-input label{
+    font-size: calc(8px + 1.25vw);
+    font-weight: 500;
+    padding:2%;
+    color: black;
+}
+/*Calculator ends*/
 /*
     height and width: vw or vh
     margin and padding: %
     font-size: calc(2px + 1.5vw);
     img: max-width: 100% (do not exceed 100)
 */
-
-
-/*Two column container ends*/
-
 footer{
     background-color: #0A66C2;
     color: white;
     padding: 1%;
     text-align: center;
 }
-
 #time-date{
     width: 25%;
     display: flex;
@@ -274,13 +235,9 @@ footer{
     justify-content: space-evenly;
     align-items: baseline;
 }
-
 footer a{
     color: bisque;
 }
-
-
-
 @media  screen and (max-width: 1000px) {
     .profile-picture{
         width: 150px;       
@@ -292,48 +249,24 @@ footer a{
     #nav-main{
         flex-direction: column;
     }
-
     nav, main{
         width: 100%;
     }
     #page-wrapper{
         width: 100vw;
     }
-    nav ul{
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        /* align-items: center; */
-        padding: 0%;
-        margin:0% auto;
-    }
-
-    #this-one{
-        flex-direction: column;
-    }
-
     header{
         text-align: center;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-    main{
-        height: 300vh;
-    }
-
     main p{
         line-height: 100%;
         font-size: calc(10px + 2vw);
         padding: 2%;
     }
-
-    #all-skills{
-        display: flex;
-        flex-direction: column;
-    }
+    /*skills starts*/
     .skill-row{
         display: flex;
         flex-direction: column;
@@ -341,16 +274,30 @@ footer a{
     .skill-category{
         width: 100%;
     }
+    /*skills ends*/
+    /*Calculator start*/
     #calculator-container{
         width:100%;
     }
-    /* #calculator-container h3{
-        outline: 2px solid black; 
-        border-radius: 1px;
+    /*Calculator ends*/
+    /*Navigation starts*/
+    nav{
         width: 100%;
-        height: calc(2px + 1.5vw);
-        font-size: calc(10px + 1.5vw);
-        justify-content: center;
-        background-color: white;
-    } */
+    }
+    nav ul{
+        padding: 0;
+    }
+    nav li{
+        width: 100%;                                   /*Keep nav buttons stacked but larger and easier to tap*/
+        text-align: center;
+        background-color:#E0DADA;
+        font-weight: 900;
+        padding: 3%;
+        border-radius: 5px;
+    }
+    nav li a{
+        font-size: calc(12px + 1.3vw);              /*Make text larger*/
+        width: 100%;                                   /*Keep nav buttons stacked but larger and easier to tap*/
+    }
+    /*Navigation ends*/
 }

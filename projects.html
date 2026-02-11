@@ -35,107 +35,105 @@
                 <main id="main">
                     <h2>Projects</h2>
                     <!--Project Content-->
-                    <section>
-                        <div class="company-header">
-                            <img src="src/images/download (1).png" alt="Boston University Logo">
-                            <h3>Boston University</h3>
+                    <div id="projects-content">
+                        <div class="company-container">
+                            <div class="company-header">
+                                <img src="src/images/download (1).png" alt="Boston University Logo">
+                                <h3>Boston University</h3>
+                            </div>
+                            <hr>
+                            <div class="role-container">
+                                <div class="role-header">
+                                    <h4><a href = "https://github.com/madhurdeepjain/PrivacyRadar">Software Engineering | Privacy Radar</a></h4>
+                                    <span>Sep 2025 - Dec 2025</span>
+                                </div>
+                                <p>
+                                    PrivacyRadar is an intelligent, privacy-focused network monitoring platform designed to
+                                    provide transparency and control over digital privacy in an increasingly connected world. Its
+                                    core mission is to provide real-time network traffic monitoring and analysis at an application
+                                    level, enabling users to track exactly which applications are communicating, what data they're
+                                    transmitting, and where it's being sent. The platform empowers users by transforming complex
+                                    network analysis into actionable privacy intelligence through intuitive dashboards and
+                                    plain-language reporting, making advanced privacy protection accessible regardless of
+                                    technical expertise. Its core mission is to Provide real-time network traffic monitoring and analysis at an application level,
+                                    Empower users by transforming complex network analysis into actionable privacy intelligence and Identify privacy violations, 
+                                    unauthorized data collection, and suspicious application behavior: 
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="role-container">
+                                <div class="role-header">
+                                    <h4>Information Structures with Python | Term Project</h4>
+                                    <span>Nov 2024 - Dec 2024</span>
+                                </div>
+                                <p>I created a console turn based strategy game, using Python. The goal of this game is for a 4
+                                    player to gather resources and funds. It's implementation is almost fully object oriented. 
+                                    Work done for this project could potentially serve as a foundation for a sequel that incorporates 
+                                    a GUI interface and AI enemies.
+                                </p>
+                            </div>
                         </div>
+                        <div class="company-container">
+                            <div class="company-header">
+                                <img src="src/images/Bryant_University_seal.png" alt="Bryant University Logo">
+                                <h3>Bryant University</h3>
+                            </div>
+                            <hr>
+                            <div class="role-container">
+                                <div class="role-header">
+                                    <h4>Advanced Application Development | Account Balance Final Project</h4>
+                                    <span>Apr 2021 - May 2021</span>
+                                </div>
+                                <p>Created an application that focuses on the server side of a typical Web Application using 
+                                    Java technology. The front-end application consisted of two basic pages which worked in 
+                                    tandem with one another to complete the application.
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="role-container">
+                                <div class="role-header">
+                                    <h4>Big Data Analytics | AAA Cross-Selling Opportunities</h4>
+                                    <span>Apr 2021 - May 2021</span>
+                                </div>
+                                <ul>
+                                    <li>Conducted an exploratory data analysis on several million records provided by AAA Northeast</li>
+                                    <li>erformed the significant steps of a machine learning pipeline, from ETL and feature engineering, to model creation and evaluation</li>
+                                    <li>Utilized PySpark on the cloud-based platform Databricks</li>
+                                    <li>Tested various machine learning models, to identify the distinct characteristics of the client's customer base</li>
+                                    <li>Presented our findings directly to the client, clearly and concisely, to benefit the cross-selling of their product offering</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--End Project Content-->
+                        <!--Calculator Content-->
+                        <!--One Column start-->
                         <hr>
-                        <div class="role-container">
-                            <div class="role-header">
-                                <h4>Software Engineering | Privacy Radar</h4>
-                                <p>Sep 2025 - Dec 2025</p>
+                        <h3>The Calculator</h3>
+                        <div id="calculator-container">
+                            <h3 id="output"></h3>
+                            <div id="calculator-button-group">
+                                <div class="calculator-button-row">
+                                    <button onclick="operation(this)">+</button>
+                                    <button onclick="operation(this)">-</button>
+                                </div>
+                                <div class="calculator-button-row">
+                                    <button onclick="operation(this)">*</button>
+                                    <button onclick="operation(this)">/</button>
+                                </div>
+                                <div class="calculator-button-row">
+                                    <button onclick="operation(this)">**</button>
+                                    <button onclick="clearInputOutput()">Clear</button>
+                                </div>
                             </div>
-                            <p>
-                                PrivacyRadar is an intelligent, privacy-focused network monitoring platform designed to
-                                provide transparency and control over digital privacy in an increasingly connected world. Its
-                                core mission is to provide real-time network traffic monitoring and analysis at an application
-                                level, enabling users to track exactly which applications are communicating, what data they're
-                                transmitting, and where it's being sent. The platform empowers users by transforming complex
-                                network analysis into actionable privacy intelligence through intuitive dashboards and
-                                plain-language reporting, making advanced privacy protection accessible regardless of
-                                technical expertise. Its core mission is to
-                            </p>
-                            <ul>
-                                <li>Provide real-time network traffic monitoring and analysis at an application level</li>
-                                <li>Empower users by transforming complex network analysis into actionable privacy intelligence</li>
-                                <li>Identify privacy violations, unauthorized data collection, and suspicious application behavior</li>
-                            </ul>
-                            <a href = "https://github.com/madhurdeepjain/PrivacyRadar">Github Repo</a>
-                        </div>
-                        <hr>
-                        <div class="role-container">
-                            <div class="role-header">
-                                <h4>Information Structures with Python | Term Project</h4>
-                                <p>Nov 2024 - Dec 2024</p>
-                            </div>
-                            <p>I created a console turn based strategy game, using Python. The goal of this game is for a 4
-                                player to gather resources and funds. It's implementation is almost fully object oriented. 
-                                Work done for this project could potentially serve as a foundation for a sequel that incorporates 
-                                a GUI interface and AI enemies.
-                            </p>
-                        </div>
-                    </section>
-                    <section>
-                        <div class="company-header">
-                            <img src="src/images/Bryant_University_seal.png" alt="Bryant University Logo">
-                            <h3>Bryant University</h3>
-                        </div>
-                        <hr>
-                        <div class="role-container">
-                            <div class="role-header">
-                                <h4>Advanced Application Development | Account Balance Final Project</h4>
-                                <p>Apr 2021 - May 2021</p>
-                            </div>
-                            <p>Created an application that focuses on the server side of a typical Web Application using 
-                                Java technology. The front-end application consisted of two basic pages which worked in 
-                                tandem with one another to complete the application.
-                            </p>
-                        </div>
-                        <hr>
-                        <div class="role-container">
-                            <div class="role-header">
-                                <h4>Big Data Analytics | AAA Cross-Selling Opportunities</h4>
-                                <p>Apr 2021 - May 2021</p>
-                            </div>
-                            <ul>
-                                <li>Conducted an exploratory data analysis on several million records provided by AAA Northeast</li>
-                                <li>erformed the significant steps of a machine learning pipeline, from ETL and feature engineering, to model creation and evaluation</li>
-                                <li>Utilized PySpark on the cloud-based platform Databricks</li>
-                                <li>Tested various machine learning models, to identify the distinct characteristics of the client's customer base</li>
-                                <li>Presented our findings directly to the client, clearly and concisely, to benefit the cross-selling of their product offering</li>
-                            </ul>
-                        </div>
-                    </section>
-                    <!--End Project Content-->
-                    <!--Calculator Content-->
-                    <!--One Column start-->
-                    <hr>
-                    <h3>The Calculator</h3>
-                    <div id="calculator-container">
-                        <h3 id="output"></h3>
-                        <div id="calculator-button-group">
-                            <div class="calculator-button-row">
-                                <button onclick="addition()">+</button>
-                                <button onclick="subtract()">-</button>
-                            </div>
-                            <div class="calculator-button-row">
-                                <button onclick="multiply()">*</button>
-                                <button onclick="divide()">/</button>
-                            </div>
-                            <div class="calculator-button-row">
-                                <button onclick="power()">**</button>
-                                <button onclick="clearInputOutput()">Clear</button>
-                            </div>
-                        </div>
-                        <div id="calculator-input-group">
-                            <div class="calculator-input">
-                                <label>First Number:</label>
-                                <input type="number" id="first-number">
-                            </div>
-                            <div class="calculator-input">
-                                <label>Second Number:</label>
-                                <input type="number" id="second-number">
+                            <div id="calculator-input-group">
+                                <div class="calculator-input">
+                                    <label>First Number:</label>
+                                    <input type="number" id="first-number">
+                                </div>
+                                <div class="calculator-input">
+                                    <label>Second Number:</label>
+                                    <input type="number" id="second-number">
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -149,6 +147,6 @@
             </footer>
             <!--Footer End-->
         </div>
-        <script src="src/js/calc.js"></script>
+        <script src="src/js/calc copy.js"></script>
     </body>
 </html>
