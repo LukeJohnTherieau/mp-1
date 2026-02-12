@@ -1,30 +1,40 @@
 function operation(element){
+    // Get inputs and parse as floats
     var firstNumber = parseFloat(document.getElementById("first-number").value);
     var secondNumber = parseFloat(document.getElementById("second-number").value);
+    // Check if one of the inputs is null
     if (isNaN(firstNumber) || isNaN(secondNumber)) {
         document.getElementById("output").style.color = "red";
         document.getElementById("output").innerHTML = "Please enter valid numbers.";
         return;
     }
     let answer;
-    if (element.textContent === "+"){
+    // Instead of 5 seperate functions, I decided to use a switch statement and get the text from the element (button) that calls the single function
+    switch (element.textContent) {
+    case "+":
         answer = firstNumber + secondNumber;
-    } else if (element.textContent === "-"){
-        answer = firstNumber - secondNumber;
-    } else if (element.textContent === "*"){
+        break;
+    case "-":
+        answer = firstNumber - secondNumber
+        break;
+    case "*":
         answer = firstNumber * secondNumber;
-    } else if (element.textContent === "/"){
+        break;
+    case "/":
         answer = firstNumber / secondNumber;
-    } else if (element.textContent === "**"){
+        break;
+    case "**":
         answer = firstNumber;   
         for (var i = 1; i < secondNumber; i++){
             answer *= firstNumber;
         }
-    } else {
+        break;
+    default:
+        // Handle a command that has not been defined yet
         document.getElementById("output").style.color = "red";
         document.getElementById("output").innerHTML = "Invalid operation.";
-        return;
     }
+    // Red if negative 
     if (answer < 0) {
         document.getElementById("output").style.color = "red";
     } else {

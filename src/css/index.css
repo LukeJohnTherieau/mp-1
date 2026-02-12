@@ -299,5 +299,21 @@ footer a{
         font-size: calc(12px + 1.3vw);              /*Make text larger*/
         width: 100%;                                   /*Keep nav buttons stacked but larger and easier to tap*/
     }
+    .calculator-input input{
+        font-size: calc(12px + 1.25vw);
+    }
+    .calculator-button-row button{
+        font-size: calc(12px + 1.25vw);
+    }
+    .calculator-input{
+        font-size: calc(12px + 1.25vw);
+        font-weight: 500;
+        padding:2%;
+        color: black;
+    }
+    #calculator-container h3{
+        height: calc(18px + 1.5vw);                    /*Give font size and height the same size so that area doesn't change as much when values appear*/
+        font-size: calc(18px + 1.5vw);
+    }
     /*Navigation ends*/
 }
