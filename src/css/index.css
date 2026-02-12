@@ -270,6 +270,7 @@ footer a{
     .skill-row{
         display: flex;
         flex-direction: column;
+        margin: 1%;
     }
     .skill-category{
         width: 100%;
@@ -298,22 +299,23 @@ footer a{
     nav li a{
         font-size: calc(12px + 1.3vw);              /*Make text larger*/
         width: 100%;                                   /*Keep nav buttons stacked but larger and easier to tap*/
+        display: inline-block;
     }
     .calculator-input input{
         font-size: calc(12px + 1.25vw);
     }
     .calculator-button-row button{
-        font-size: calc(12px + 1.25vw);
+        font-size: calc(18px + 1.25vw);
     }
     .calculator-input{
-        font-size: calc(12px + 1.25vw);
-        font-weight: 500;
-        padding:2%;
-        color: black;
+        font-size: calc(18px + 1.5vw);
     }
     #calculator-container h3{
         height: calc(18px + 1.5vw);                    /*Give font size and height the same size so that area doesn't change as much when values appear*/
         font-size: calc(18px + 1.5vw);
+    }
+    #calculator-container{                  /*Used to contain calculator project*/
+        border-radius: 0px;                 /*Give caluclator container rounded edges (like a caluclator would have)*/                
     }
     /*Navigation ends*/
 }
